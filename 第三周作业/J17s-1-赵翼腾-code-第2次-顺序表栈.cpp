@@ -55,6 +55,7 @@ bool Show(SqStack S)
 	{
 		cout << *--S.top<<" ";
 	}
+	cout<<endl;
 	return 1;
 }
 
@@ -71,6 +72,14 @@ int main()
 		cin >> e;
 		Push(S, e);
 	}
+	Show(S);
+	cout<<"删除栈顶元素"<<endl;
+	Pop(S,e);
+	Show(S);
+	cout<<"请输入要添加的元素值："<<endl; 
+
+	cin>>e;
+	Push(S,e);
 	Show(S);
 	return 0;
 }
