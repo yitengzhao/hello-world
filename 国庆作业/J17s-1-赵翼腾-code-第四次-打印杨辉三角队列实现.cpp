@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 	int n;
-	cout << "è¯·è¾“å…¥æ¨è¾‰ä¸‰è§’çš„å±‚æ•°ï¼š";
+	cout << "ÇëÊäÈëÑî»ÔÈý½ÇµÄ²ãÊý£º";
 	cin >> n;
 
 	queue<int>q;

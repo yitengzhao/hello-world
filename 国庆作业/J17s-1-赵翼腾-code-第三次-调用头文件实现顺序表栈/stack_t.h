@@ -14,3 +14,5 @@ bool Push(SqStack &S, int e);
 bool Pop(SqStack &S, int &e);
 bool GetTop(SqStack S, int &e);
 bool Show(SqStack S);
+
+

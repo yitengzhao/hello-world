@@ -31,7 +31,7 @@ void hanoi(int n, char a, char b, char c)
 
 		if (n == 1)
 		{
-			cout << "ä»Ž" << St.a << "åˆ°" << St.c << endl;
+			cout << "´Ó" << St.a << "µ½" << St.c << endl;
 		}
 		else
 		{
@@ -45,7 +45,7 @@ void hanoi(int n, char a, char b, char c)
 int main()
 {
 	int n;
-	cout << "è¯·è¾“å…¥n:";
+	cout << "ÇëÊäÈëººÅµËþµÄ²ãÊý¥n:";
 	cin >> n;
 	hanoi(n, 'A', 'B', 'C');
 	return 0;

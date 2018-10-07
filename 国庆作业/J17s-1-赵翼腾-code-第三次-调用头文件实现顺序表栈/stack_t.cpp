@@ -1,5 +1,5 @@
 #include<iostream>
-#include"stack_zt.h"
+#include"stack_t.h"
 using namespace std;
 
 
@@ -8,7 +8,7 @@ bool Init(SqStack &S)
 {
 	S.base = new int[MAXSIZE];
 	if (!S.base)
-		exit(OVERFLOW);
+		return 0;
 	S.top = S.base;
 	S.stacksize = MAXSIZE;
 	return 1;
@@ -42,7 +42,7 @@ bool Show(SqStack S)
 {
 	if (S.base == S.top)
 		return 0;
-	cout << "è¾“å‡ºï¼š";
+	cout << "Êä³ö£º";
 	while (S.base != S.top)
 	{
 		cout << *--S.top << " ";
@@ -50,3 +50,4 @@ bool Show(SqStack S)
 	cout << endl;
 	return 1;
 }
+

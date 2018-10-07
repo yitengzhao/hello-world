@@ -40,7 +40,7 @@ bool Creat(LinkStack &S)
 {
 	S = NULL;
 	int n;
-	cout << "è¯·è¾“å…¥å…¥æ ˆå…ƒç´ çš„ä¸ªæ•°ï¼š";
+	cout << "ÇëÊäÈëÈëÕ»ÔªËØµÄ¸öÊý£º";
 	cin >> n;
 	for (int i = 0; i < n; i++)
 	{
@@ -64,5 +64,6 @@ bool Show(LinkStack &S)
 	cout << endl;
 	return 1;
 }
+
 
 

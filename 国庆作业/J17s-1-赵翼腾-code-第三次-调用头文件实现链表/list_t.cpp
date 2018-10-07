@@ -4,13 +4,13 @@
 using namespace std;
 
 int Initlist(LinkList &L)
-{//åˆå§‹åŒ–
+{//³õÊ¼»¯
 	L = new LNode;
 	L->next = NULL;
 	return OK;
 }
 
-//æ’å…¥
+//²åÈë
 int ListInsert(LinkList &L, int e, int i)
 {
 	LinkList p = L;
@@ -38,7 +38,7 @@ int ListInsert(LinkList &L, int e, int i)
 
 }
 
-//å–å€¼
+//È¡Öµ
 int GetElem(LinkList L, int i, int &e)
 {
 	LinkList p = L;
@@ -54,7 +54,7 @@ int GetElem(LinkList L, int i, int &e)
 	return OK;
 }
 
-//æŸ¥æ‰¾
+//²éÕÒ
 LinkList LocateElem(LinkList L, int e)
 {
 	LinkList p = L->next;
@@ -69,7 +69,7 @@ LinkList LocateElem(LinkList L, int e)
 	return p;
 }
 
-//åˆ é™¤
+//É¾³ý
 int ListDelete(LinkList &L, int i)
 {
 	LinkList p = L;
@@ -125,7 +125,7 @@ int ListShow(LinkList &L)
 	LinkList p = L->next;
 	if (p == NULL)
 	{
-		cout << "é“¾è¡¨å†…æ²¡æœ‰æ•°æ®" << endl;
+		cout << "Á´±íÄÚÃ»ÓÐÊý¾Ý" << endl;
 		return 0;
 	}
 	while (p)
