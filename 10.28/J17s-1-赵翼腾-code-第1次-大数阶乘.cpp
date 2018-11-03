@@ -5,18 +5,17 @@
 
 using namespace std;
 
-int main(int argc, char *argv[])
+int main()
 {
 	int n = 0;
 	cout << "Please input the number for Factorial operate : ";
 	cin >> n;
 
 	int LargeNumberFactorial[10000] = { 0 };
-	LargeNumberFactorial[0] = 1;        // 0! = 1 
-	LargeNumberFactorial[1] = 1;        // 第一位对应的数值初始为 1    
-	int          digit = 1;        // n!阶乘求取的位数初始为 1 
-
-	for (int i = 1; i <= n; i++)           // 1,2,3,...,n
+	LargeNumberFactorial[0] = 1;      
+	LargeNumberFactorial[1] = 1;       
+	int digit = 1;        
+	for (int i = 1; i <= n; i++)        
 	{
 		for (int j = 1; j <= digit; j++)
 		{
